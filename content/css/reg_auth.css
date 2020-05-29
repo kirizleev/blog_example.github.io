@@ -1,0 +1,130 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    height: 20px;
+    width: 100%;
+    background-color: #3c4cad;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 30px 0;
+}
+
+header h3{
+    margin: 0 135px;
+    padding: 0;
+}
+
+header nav{
+    margin: 0 135px;
+}
+
+header nav a{
+    padding-left: 15px;
+}
+
+header a{
+    color: white;
+}
+
+.find_authorize{
+    height: 50px;
+    display: flex;
+    background-color: #5e72EB;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.find_authorize input{
+    border-radius: 5px;
+    height: 30px;
+    width: 235px;
+    border: none;
+    margin: 0 0 0 135px;
+}
+
+.find_authorize a{
+    color: white;
+    margin: 0 135px;
+}
+
+
+#find_button{
+    background-color: #56c596;
+    width: 74px;
+    color: white;
+    margin-left: 6px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_col{
+    width: 25%;
+    float: left;
+    border-radius: 5px;
+    margin: 30px 15px 70px 135px;
+}
+
+.left_col input{
+    width: 72%;
+    border-radius: 5px;
+    height: 38px;
+    border: 1px solid #e4e4e4;
+    margin: 5px 0;
+    padding: 0;
+}
+
+#auth_button{
+    background-color: #56c596;
+    width: 72%;
+    color: white;
+    padding: 0;
+}
+
+.right_col{
+    width: 65%;
+    float: right;
+    margin: 30px 135px 70px 15px;
+}
+
+.right_col input{
+    display: block;
+    width: 45%;
+    border-radius: 5px;
+    height: 38px;
+    border: 1px solid #e4e4e4;
+    margin: 5px 20px;
+    justify-content: space-between;
+}
+
+#reg_button{
+    background-color: #56c596;
+    width: 100%;
+    color: white;
+}
+
+footer{
+    position: absolute;
+    background-color: #414141;
+    color: white;
+    height: 56px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    bottom: 0;
+    width: 99%;
+}
+
+footer p {
+    margin: 0 135px;
+}
