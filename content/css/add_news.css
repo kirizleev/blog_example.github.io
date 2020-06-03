@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+}
+
+section{
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    display: flex;
+    height: 76px;
+    background-color: #3c4cad;
+    color: white;
+    align-items: center;
+}
+
+header div{
+    margin: auto;
+    width: 1080px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h3{
+    margin: 0;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    margin-left: 35px;
+}
+
+header a:first-child{
+    margin-left: 0;
+}
+
+main{
+    background-color: #e9e9e9;
+    border-radius: 10px;
+    margin-top: 46px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 0;
+    width: 1080px;
+}
+
+main h4{
+    margin: 0 20px;
+}
+
+main .news_form{
+    margin: 0 20px;
+}
+
+main .news_form form{
+    margin-top: 42px;
+}
+
+main .news_form form input{
+    width: 418px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 25px;
+}
+
+main .news_form form input[type="submit"]{
+    background-color: #56c596;
+    color: white;
+    float: right;
+    cursor: pointer;
+    width: 443px;
+    margin-top: 40px;
+}
+
+main .news_form form div{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .news_form form textarea{
+    font-family: 'Montserrat', sans-serif;
+    width: calc(100% - 50px);
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 17px 25px;
+    margin-bottom: 42px;
+}
+
+main .news_form form textarea:first-of-type{
+    margin-top: 25px;
+}
+
+
+footer{
+    position: absolute;
+    background-color: #414141;
+    color: white;
+    height: 56px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    bottom: 0;
+    width: 100%;
+}
+
+footer div{
+    margin: auto;
+    width: 1080px;
+}
