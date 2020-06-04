@@ -11,23 +11,36 @@
 
 <body>
     <header>
-        <a href="homepage.html">
-            <h3>Блог пользователя</h3>
-        </a>
-        <nav>
-            <a href="homepage.html">Главная</a>
-            <a href="article.html">Статья</a>
-            <a href="#">Новости</a>
-            <a href="#">Обо мне</a>
-        </nav>
+        <div class="width1080">
+            <a href="homepage.html">
+                <h3>Блог пользователя</h3>
+            </a>
+            <nav>
+                <a href="homepage.html">Главная</a>
+                <a href="article.html">Статья</a>
+                <a href="#">Новости</a>
+                <a href="#">Обо мне</a>
+            </nav>
+            <nav class="mobile_menu_opened" id="mobile_menu">
+                <a href="homepage.html">Главная</a>
+                <a href="article.html">Статьи</a>
+                <a href="#">Новости</a>
+                <a href="#">Обо мне</a>
+                <a href="reg_auth.html">Авторизация и Регистрация</a>
+                <a href="#" onclick="document.getElementById('mobile_menu').style.display = 'none'">Закрыть</a>
+            </nav>
+            <div class="mobile_menu_button" id="mobile_menu_button" onclick="document.getElementById('mobile_menu').style.display = 'block'"></div>
+        </div>
     </header>
     <div class="find_authorize">
-        <form>
-            <input type="text" placeholder="     Введите текст...">
-            <input type="submit" value="Искать" id="find_button">
-        </form>
-        <div>
-            <a href="#">Авторизация и регистрация</a>
+        <div class="width1080">
+            <form>
+                <input type="text" placeholder="     Введите текст...">
+                <input type="submit" value="Искать" id="find_button">
+            </form>
+            <div>
+                <a href="#">Авторизация и регистрация</a>
+            </div>
         </div>
     </div>
     <div class="main">
@@ -45,20 +58,22 @@
             <div>
                 <form action="">
                     <input type="text" placeholder="    Логин">
-                    <input type="text" placeholder="    Почта">
-                    <input type="text" placeholder="    Пароль">
-                    <input type="text" placeholder="    Номер телефона">
                     <input type="text" placeholder="    Имя">
+                    <input type="email" placeholder="    Почта">
                     <input type="text" placeholder="    Фамилия">
-                    <input type="text" placeholder="    Подтвердите пароль">
-                    <input type="text" placeholder="    Второй номер(необязательно)">
+                    <input type="password" placeholder="    Пароль">
+                    <input type="password" placeholder="    Подтвердите пароль">
+                    <input type="tel" placeholder="    Номер телефона">
+                    <input type="tel" placeholder="    Второй номер(необязательно)">
                     <input type="submit" id="reg_button">
                 </form>
             </div>
         </div>
     </div>
     <footer>
-        <p>Все права защищены</p>
+        <div>
+            <p>Все права защищены</p>
+        </div>
     </footer>
 </body>
 

@@ -11,23 +11,36 @@
 
 <body>
     <header>
-        <a href="homepage.html">
-            <h3>Блог пользователя</h3>
-        </a>
-        <nav>
-            <a href="homepage.html">Главная</a>
-            <a href="article.html">Статья</a>
-            <a href="#">Новости</a>
-            <a href="#">Обо мне</a>
-        </nav>
+        <div class="width1080">
+            <a href="homepage.html">
+                <h3>Блог пользователя</h3>
+            </a>
+            <nav>
+                <a href="homepage.html">Главная</a>
+                <a href="article.html">Статья</a>
+                <a href="#">Новости</a>
+                <a href="#">Обо мне</a>
+            </nav>
+            <nav class="mobile_menu_opened" id="mobile_menu">
+                <a href="homepage.html">Главная</a>
+                <a href="article.html">Статьи</a>
+                <a href="#">Новости</a>
+                <a href="#">Обо мне</a>
+                <a href="reg_auth.html">Авторизация и Регистрация</a>
+                <a href="#" onclick="document.getElementById('mobile_menu').style.display = 'none'">Закрыть</a>
+            </nav>
+            <div class="mobile_menu_button" id="mobile_menu_button" onclick="document.getElementById('mobile_menu').style.display = 'block'"></div>
+        </div>
     </header>
     <div class="find_authorize">
-        <form>
-            <input type="text" placeholder="     Введите текст...">
-            <input type="submit" value="Искать" id="find_button">
-        </form>
-        <div>
-            <a href="reg_auth.html">Авторизация и регистрация</a>
+        <div class="width1080">
+            <form>
+                <input type="text" placeholder="     Введите текст...">
+                <input type="submit" value="Искать" id="find_button">
+            </form>
+            <div>
+                <a href="reg_auth.html">Авторизация и регистрация</a>
+            </div>
         </div>
     </div>
     <div class="main">
@@ -141,8 +154,10 @@
         </nav>
     </div>
     <footer>
-        <p>2019 Все права защищены</p>
-        <p><a href="#">Разработчик</a></p>
+        <div>
+            <p>2019 Все права защищены</p>
+            <a href="#">Разработчик</a>
+        </div>
     </footer>
 </body>
 

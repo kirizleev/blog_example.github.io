@@ -7,23 +7,24 @@ a{
     text-decoration: none;
 }
 
-header{
-    height: 20px;
-    width: 100%;
-    background-color: #3c4cad;
+.width1080{
+    max-width: 1080px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    margin: 0;
-    padding: 30px 0;
+    align-items: center;
+    height: 100%;
+}
+
+header{
+    height: 85px;
+    background-color: #3c4cad;
 }
 
 header h3{
-    margin: 0 135px;
+    margin: 0;
     padding: 0;
-}
-
-header nav{
-    margin: 0 135px;
+    white-space: nowrap;
 }
 
 header nav a{
@@ -32,14 +33,38 @@ header nav a{
 
 header a{
     color: white;
+    overflow: hidden;
+}
+
+.mobile_menu_button {
+    display: none;
+    border-bottom: 17px double white; 
+    border-top: 6px solid white; 
+    content:"";
+    height: 5px; 
+    width:30px;
+    cursor: pointer;
+}
+
+.mobile_menu_opened{
+    display: none;
+    margin-top: 100px;
+    z-index: 2;
+    background: #5e72eb;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    border-radius: 10px;
+}
+
+.mobile_menu_opened a {
+    display: block;
 }
 
 .find_authorize{
+    width: 100%;
     height: 50px;
-    display: flex;
     background-color: #5e72EB;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .find_authorize input{
@@ -47,12 +72,10 @@ header a{
     height: 30px;
     width: 235px;
     border: none;
-    margin: 0 0 0 135px;
 }
 
 .find_authorize a{
     color: white;
-    margin: 0 135px;
 }
 
 #find_button{
@@ -66,13 +89,14 @@ header a{
 .main{
     display: flex;
     justify-content: space-between;
+    max-width: 1080px;
+    margin: auto;
 }
 
 .left_col{
     width: 70%;
-    float: left;
     border-radius: 5px;
-    margin: 30px 15px 70px 135px;
+    margin: 30px 15px 70px 0;
 }
 
 .left_col>:last-child{
@@ -126,10 +150,10 @@ header a{
 
 .right_col{
     width: 25%;
-    float: right;
     border-radius: 5px;
     box-shadow: 0 5px 50px 0 #c4b5b5;
-    margin: 30px 135px 70px 15px;    
+    margin: 30px 0 70px 15px;   
+    padding: 1px 0; 
 }
 
 .right_col li{
@@ -149,18 +173,49 @@ footer{
     background-color: #414141;
     color: white;
     height: 56px;
-    margin: 0;
-    display: flex;
-    align-items: center;
     font-weight: bold;
     bottom: 0;
+}
+
+footer div{
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-footer p {
-    margin: 0 135px;
-}
-
-footer p a{
+footer a{
     color: white;
+}
+
+@media screen and (max-width: 600px) {
+    header nav{
+        display: none;
+    }
+
+    header nav a{
+        padding: 6px 0;
+    }
+
+    .find_authorize a{
+        display: none;
+    }
+
+    .mobile_menu_button {
+        display: block;
+    }
+
+    .main{
+        display: block;
+    }
+
+    .main .left_col , .right_col{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .width1080, .main, footer div{
+        padding: 0 20px;
+    }
 }
