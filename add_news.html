@@ -24,26 +24,29 @@
                 <a href="#">Настройки сайта</a>
                 <a href="#" onclick="document.getElementById('mobile_menu').style.display = 'none'">Закрыть</a>
             </nav>
-            <nav class="mobile_menu_button" id="mobile_menu_button" onclick="document.getElementById('mobile_menu').style.display = 'block'"></nav>
+            <nav class="mobile_menu_button" id="mobile_menu_button"
+                onclick="document.getElementById('mobile_menu').style.display = 'block'"></nav>
         </div>
     </header>
     <main>
-        <h4>Новая новость</h4>
-        <div class="news_form">
-            <form action="">
-                <div>
-                    <input type="text" id="name" placeholder="Название">
-                    <input type="text" id="english_name" placeholder="Название на английском">
-                </div>
-                <textarea name="news_in_short" id="news_in_short" cols="" rows="5"
-                    placeholder="Краткая новость"></textarea>
-                <textarea name="main_news" id="main_news" cols="" rows="8" placeholder="Полная новость"></textarea>
-                <div>
-                    <input type="date" id="news_date" placeholder="Дата публикации">
-                    <input type="text" id="news_author" placeholder="Автор">
-                </div>
-                <input type="submit">
-            </form>
+        <div>
+            <h4>Новая новость</h4>
+            <div class="news_form">
+                <form action="">
+                    <div>
+                        <input type="text" id="name" placeholder="Название">
+                        <input type="text" id="english_name" placeholder="Название на английском">
+                    </div>
+                    <textarea name="news_in_short" id="news_in_short" cols="" rows="5"
+                        placeholder="Краткая новость"></textarea>
+                    <textarea name="main_news" id="main_news" cols="" rows="8" placeholder="Полная новость"></textarea>
+                    <div>
+                        <input type="date" id="news_date" placeholder="Дата публикации">
+                        <input type="text" id="news_author" placeholder="Автор">
+                    </div>
+                    <input type="submit">
+                </form>
+            </div>
         </div>
     </main>
     <footer>

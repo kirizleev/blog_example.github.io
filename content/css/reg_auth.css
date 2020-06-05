@@ -48,12 +48,13 @@ header a{
 
 .mobile_menu_opened{
     display: none;
-    margin-top: 100px;
-    z-index: 2;
+    position: absolute;
+    margin-top: 70px;
+    z-index: 1;
     background: #5e72eb;
-    width: 100%;
+    width: 93%;
     text-align: center;
-    padding: 50px 0;
+    padding: 10px 0;
     border-radius: 10px;
 }
 

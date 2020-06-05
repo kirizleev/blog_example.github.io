@@ -42,12 +42,13 @@ header a:first-child{
 
 .mobile_menu_opened{
     display: none;
-    margin-top: 100px;
-    z-index: 2;
+    position: absolute;
+    margin-top: 50px;
+    z-index: 1;
     background: #5e72eb;
-    width: 100%;
+    width: 93%;
     text-align: center;
-    padding: 50px 0;
+    padding: 10px 0;
     border-radius: 10px;
 }
 
@@ -125,8 +126,9 @@ footer div{
     }
 
 
-    header div, footer div{
+    header div, footer div, main{
         padding: 1px 20px;
+        box-sizing: border-box;
     }
 
     main .new_user_form form input{
@@ -139,5 +141,9 @@ footer div{
 
     main .new_user_form form input[type="submit"]{
         width: calc(100% + 25px);
+    }
+
+    footer{
+        bottom: auto;
     }
 }
