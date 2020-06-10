@@ -74,6 +74,11 @@ header a{
     border: none;
 }
 
+.width1080 form{
+	margin: auto 0;
+}
+
+
 .find_authorize a{
     color: white;
 }
